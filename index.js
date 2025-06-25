@@ -25,9 +25,9 @@ const newVegetable = vegetable.map(
 console.log("new vegetables: ", newVegetable)
 
 let student = {
-    name: "premosh",
-    age: "20",
-    rollno: "11"
+    name: "Ritnesh Thakur",
+    age: "22",
+    rollno: "14"
 }
 //accessing obj key's value
 //dot notation
@@ -35,7 +35,7 @@ console.log("name: ", student.name)
 //bracket notation
 console.log("age", student["age"])
 student["address"]="Bhaktapur"
-student.contact=9840076771
+student.contact=987654321
 console.log("", student)
 student.age=21
 console.log("",student)

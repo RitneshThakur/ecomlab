@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecomm store</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ecomm Store</title>
 </head>
 <body>
-    <h1>Product Category</h1>
-    <label for="category-input"></label>
+  <h1>Product Category</h1>
 
-    <input type="text" placeholder="Enter Category" id="category-input">
+  <input type="text" placeholder="Enter Category" id="category-input">
+  <button id="add-category">Add Category</button>
 
-    <button id="add-category">Add Category</button>
+  <ol id="category-list"></ol>
 
+  <div class="category-items">
+    <form id="item-form">
+      <h2>Category Items</h2>
 
-    <ol id="category-list">
-        
-    </ol>
-    <div class="category-items" style="background-color: aquamarine; height:50px;width: 300px; border-radius: 5px;">
-        <h1>Category Items</h1>
-        <select>
-            <br>
-            <input type="text" placeholder="Enter items" itemref="">
-        </select>
-      
-    </div>
-    <script src="productcategory.js"></script>
+      <label for="category-select">Select Category:</label>
+      <select id="category-select">
+        <!-- Categories will be added dynamically -->
+      </select>
+      <br><br>
+
+      <label for="item-select">Choose Item Type:</label>
+      <select id="item-select">
+        <option value="itemName">Item Name</option>
+        <option value="itemPrice">Item Price</option>
+      </select>
+      <br><br>
+
+      <label for="user-input">Enter Value:</label>
+      <input type="text" id="user-input" placeholder="Type here">
+      <br><br>
+
+      <input type="submit" value="Add Item">
+    </form>
+  </div>
+
+  <script src="productcategory.js"></script>
 </body>
 </html>
