@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+</head>
+
+<body>
+    <h1>Products With Cart System</h1>
+    <div style="display: flex; gap: 20px; justify-content: space-around; align-items: flex-start;">
+        <div id="products-list">
+            <h3>Product List</h3>
+            <ul id="products">
+                <!-- Product items will be injected here -->
+            </ul>
+        </div>
+        <div id="carts-list" style="border:2px solid black; padding: 10px; height:80vh; overflow-y: scroll; position: relative; width: 350px;">
+            <h3>Cart List</h3>
+            <ul id="carts">
+                <!-- Cart items will be injected here -->
+            </ul>
+            <div style="padding: 10px; background-color: burlywood; position: absolute; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center;">
+                <b id="cart-total">Grand total: 0</b>
+                <button>Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="product_with_cart.js"></script>
+</body>
+
+</html>
